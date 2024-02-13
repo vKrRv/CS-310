@@ -1,4 +1,7 @@
-public class Assignment1 {
+class Lab2 {
+/*NOTE: I had to remove "public" modifier,
+since u required that the file named "Assignment-1"
+while "-" is not allowed in class name.*/
     public static void main(String[] args){
         int[] arr1 = {0, 1, 2, 3, 4, 5};
         int[][] arr2 = {{00,01,02,03},
