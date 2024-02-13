@@ -103,7 +103,7 @@ public class CircularLinkedList<E> {
         while(!current.element.equals(value)){
             counter++;
             if(current.next == head){
-                System.out.println("Value doesn't exist!");
+                System.out.println("Value not found");
                 return;
             }
             else {
@@ -114,9 +114,9 @@ public class CircularLinkedList<E> {
         if(current == head) removeFirst();
         else{
             prev.next = current.next;
-            System.out.println("#" + counter + "Node is successfully deleted");
+            System.out.println("Node #" + counter + " is successfully deleted");
             size--;
         }
-    }
+    } //It should remove value from position but is does delete by value given
 
 }
