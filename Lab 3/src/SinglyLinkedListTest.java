@@ -4,5 +4,6 @@ class SinglyLinkedListTest {
         s.addFirst("IAU");
         s.addFirst(2322);
         s.display();
+        s.find(2322);
     }
 }

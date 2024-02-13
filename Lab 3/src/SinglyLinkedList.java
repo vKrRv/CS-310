@@ -29,13 +29,21 @@ public class SinglyLinkedList<E> {
     public SinglyLinkedList() {}
 
     public int size(){
-        return size; }
+        return size; } //Getter for size
     public boolean isEmpty(){
-        return size == 0; }
+        return size == 0; } //To check if the list is empty
     public E first() {
-        return head.element; }
+        if(isEmpty()){
+            System.out.println("List is empty");
+            return null;
+        }
+        return head.element; } //return head.element;
     public E last(){
-        return tail.element; }
+        if(isEmpty()){
+            System.out.println("List is empty");
+            return null;
+        }
+        return tail.element; } //return head.element;
     public void display(){
         Node<E> current = head;
         int counter = 0;
@@ -49,7 +57,7 @@ public class SinglyLinkedList<E> {
                 current = current.next;
             }
         }
-    }
+    } //Traverse the list and print its elements
     public void find(E value){
         Node<E> current = head;
         int counter = 0;
@@ -61,8 +69,9 @@ public class SinglyLinkedList<E> {
             }
             current = current.next;
         }
-    }
-
+        System.out.println("Value doesn't exist!");
+    } //Search the list
+    //Insertion
     public void addFirst(E e){
         Node<E> newNode = new Node<E>(e, head);
         head = newNode;
@@ -76,7 +85,7 @@ public class SinglyLinkedList<E> {
         if(size == 0) head = tail;
         size++;
     }
-
+    //Deletion
     public void removeFirst(){
         if(isEmpty()){
             System.out.println("List is empty");
