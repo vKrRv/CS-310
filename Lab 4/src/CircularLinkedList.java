@@ -90,7 +90,7 @@ public class CircularLinkedList<E> {
         tail.next = head;
         System.out.println("First node is successfully deleted");
         size--;
-        if(isEmpty()){ tail = null; head = null;}
+        if(isEmpty()) tail = head = null;
     }
     public void removeAtPos(E value){
         if(isEmpty()){
