@@ -76,7 +76,7 @@ public class CircularDoubleLinkedList<E> {
             counter--;
             current = current.prev;
         } while (current != tail);
-    }
+    } //Backward traverse
     public void find(E value){
         if(isEmpty()){
             System.out.println("List is empty");
